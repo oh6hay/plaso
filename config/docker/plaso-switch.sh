@@ -16,17 +16,17 @@
 
 case "$1" in
     image_export|image_export.py)
-        /usr/local/bin/image_export.py --unattended "${@:2}" ;;
+        /usr/local/bin/image_export --unattended "${@:2}" ;;
     log2timeline|log2timeline.py)
-        /usr/local/bin/log2timeline.py --unattended "${@:2}" ;;
+        /usr/local/bin/log2timeline --unattended "${@:2}" ;;
     pinfo|pinfo.py)
-        /usr/local/bin/pinfo.py "${@:2}" ;;
+        /usr/local/bin/pinfo "${@:2}" ;;
     psort|psort.py)
-        /usr/local/bin/psort.py --unattended "${@:2}" ;;
+        /usr/local/bin/psort --unattended "${@:2}" ;;
     psteal|psteal.py)
-        /usr/local/bin/psteal.py --unattended "${@:2}" ;;
+        /usr/local/bin/psteal --unattended "${@:2}" ;;
     "")
-        /usr/local/bin/log2timeline.py --unattended "${@:2}" ;;
+        /usr/local/bin/log2timeline --unattended "${@:2}" ;;
     *)
         echo "Unsupported command: $1"
 esac
